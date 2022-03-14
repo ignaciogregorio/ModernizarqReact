@@ -1,0 +1,95 @@
+@import './/../styles/fonts';
+@import './/..//styles/colors';
+@import "~animate.css/animate.css";
+
+
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    color: $white;
+    border-bottom: 2px solid $white;
+    .navbar-menu{
+        display: flex;
+        list-style: none;
+        justify-content:flex-end;
+        align-items: center;
+        padding-top: 50px;
+        
+    }
+
+    .navbar-links{
+        padding-left: 20px;
+        font-family: $font;
+        font-size: $fontSize;
+        text-decoration: none;
+        color: $white;
+        
+        &:hover {
+            color: $golden;
+        }
+        
+    }
+    .active{
+        color: $golden;
+    }
+    .burger-menu{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .navbar-container{
+        display: flex;
+        justify-content: flex-start;
+
+        .burger-menu{
+            display: flex;
+            align-self: center;
+            position: relative;
+            margin-left: 10px;
+            font-size: 25px;
+            z-index: 5;
+        }
+        
+        .logo-img{
+            position: relative;
+            margin-left: 7vh;
+            img{
+                height: 100px;
+            }
+
+        }
+
+        .navbar-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $blue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+
+        }
+        .close{
+            display: none;
+        }
+
+
+    }
+
+
+    
+}
+
+
+
+
+
+
+

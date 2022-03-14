@@ -1,26 +1,76 @@
 
+import React, { useState } from 'react'
+import { Link, NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars, faX } from '@fortawesome/free-solid-svg-icons'
+import 'animate.css'
 
-import React from 'react'
 
-import './navbar.css'
+import './navbar.scss'
 
 export const Navbar = () => {
 
+  const [showMenu, setShowMenu] = useState(false)
 
+  const navbarLogo = require('../images/Logo Barra Superior.png')
+
+  const currentClass = ({ isActive }) => (isActive ? "navbar-links + active" : "navbar-links")
+
+  const toggleMenu = () =>{
+    
+    setShowMenu(!showMenu)
+    
+  }
+
+  
   return (
+    
+    
+    <nav className='navbar-container'>
 
-    <div className='navbar-container'>
-        <img src="" alt="" />IMG
+        <FontAwesomeIcon 
+        className='burger-menu'
+        icon={ showMenu ? faX : faBars }
+        onClick = { toggleMenu }
+        />
 
-        <ul className='navbar-menu'>
-          <li> Nosotros </li>
-          <li> Servicios </li>
-          <li> Proyectos </li>
-          <li> Contacto </li>
+        <Link to='/' 
+          className='logo-img'
+          >
+          <img src={navbarLogo} alt="" />
+        </Link>
+        
+        <ul className={`${ showMenu ? 'navbar-menu': 'close' }`}>
+          <li> 
+            <NavLink 
+              className={currentClass}  
+              to="/Nosotros"
+              onClick={ toggleMenu }
+              > Nosotros </NavLink>
+          </li>
+          <li> 
+            <NavLink 
+            className={currentClass}  
+            to="/Servicios"
+            onClick={ toggleMenu }
+            > Servicios </NavLink>
+          </li>
+          <li>
+            <NavLink 
+            className={currentClass}  
+            to= "/Proyectos"
+            onClick={ toggleMenu }
+            > Proyectos </NavLink>
+          </li>
+          <li>
+            <NavLink 
+            className={currentClass}  
+            to= "/Contacto"
+            onClick={ toggleMenu }
+            > Contacto </NavLink>
+          </li>
         </ul>
 
-        <hr />
-
-    </div>
+    </nav>
   )
 }
