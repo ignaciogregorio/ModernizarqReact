@@ -1,0 +1,12 @@
+
+@media (max-width: 576px) {
+    #carouselExampleSlidesOnly{
+        z-index: -1;
+    }
+    .carousel-item{
+        img{
+            height: 200px;
+            z-index: 0;
+        }
+    }
+}

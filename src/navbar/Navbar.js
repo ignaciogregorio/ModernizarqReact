@@ -18,10 +18,8 @@ export const Navbar = () => {
 
   const toggleMenu = () =>{
     
-    setShowMenu(!showMenu)
-    
+    setShowMenu(!showMenu) 
   }
-
   
   return (
     
@@ -40,7 +38,7 @@ export const Navbar = () => {
           <img src={navbarLogo} alt="" />
         </Link>
         
-        <ul className={`${ showMenu ? 'navbar-menu': 'close' }`}>
+        <ul className={` navbar-menu ${ showMenu ? '': 'close' }`}>
           <li> 
             <NavLink 
               className={currentClass}  

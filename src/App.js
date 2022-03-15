@@ -4,6 +4,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
+import 'animate.css';
 
 
 import { Home } from "./home/Home";
@@ -24,7 +25,7 @@ function App() {
         <Navbar />  
         
           <Routes>
-            <Route path='/home' exact element={ <Home /> } />
+            <Route path='/' exact element={ <Home /> } />
             <Route path='/nosotros' exact element={ <Nosotros/>} />
             <Route path='/servicios' exact element={ <Servicios/> } />
             <Route path='/proyectos' exact element={ <Proyectos/> } />

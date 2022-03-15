@@ -11,6 +11,7 @@
     justify-content: space-around;
     color: $white;
     border-bottom: 2px solid $white;
+    
     .navbar-menu{
         display: flex;
         list-style: none;
@@ -38,8 +39,6 @@
     .burger-menu{
         display: none;
     }
-
-
 }
 
 @media (max-width: 576px) {
@@ -47,6 +46,7 @@
     .navbar-container{
         display: flex;
         justify-content: flex-start;
+        
 
         .burger-menu{
             display: flex;
@@ -59,13 +59,10 @@
         
         .logo-img{
             position: relative;
-            margin-left: 7vh;
             img{
-                height: 100px;
+                align-self: center;
             }
-
         }
-
         .navbar-menu{
             display: flex;
             flex-direction: column;
@@ -74,10 +71,10 @@
             height: 100%;
             width: 100%;
             position: absolute;
-
         }
         .close{
             display: none;
+            font-size: 100px;
         }
 
 
