@@ -18,13 +18,14 @@
         justify-content:flex-end;
         align-items: center;
         padding-top: 50px;
+        text-align: center;
         
     }
 
     .navbar-links{
         padding-left: 20px;
         font-family: $font;
-        font-size: $fontSize;
+        font-size: $fontSizeText;
         text-decoration: none;
         color: $white;
         
@@ -41,13 +42,53 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .navbar-container{
+        display: flex;
+        justify-content: space-evenly;
+        
+        .burger-menu{
+            display: flex;
+            align-self: center;
+            position: relative;
+            margin-left: 10px;
+            font-size: 25px;
+            z-index: 5;
+        }
+        
+        .logo-img{
+            position: relative;
+            img{
+                align-self: center;
+            }
+        }
+        .navbar-menu{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: $blue;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .close{
+            display: none;
+            font-size: 100px;
+        }
+
+
+    }
+
+
+    
+}
+
 @media (max-width: 576px) {
 
     .navbar-container{
         display: flex;
-        justify-content: flex-start;
         
-
         .burger-menu{
             display: flex;
             align-self: center;

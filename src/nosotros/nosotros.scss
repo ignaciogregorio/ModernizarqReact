@@ -19,13 +19,13 @@
         h1{
             color: $white;
             font-family: $font;
-            font-size: $fontSize * 3;
+            font-size: $fontSizeTitle;
             margin-bottom: 45px;
         }
         p{
             color: $white;
             font-family: $font;
-            font-size: $fontSize;
+            font-size: $fontSizeText;
         }
         .p-mobile{
             display: none;
@@ -49,7 +49,7 @@
         p{
             color: $white;
             font-family: $font;
-            font-size: $fontSize;
+            font-size: $fontSizeText;
             margin-bottom: 7vh;
             
         }
@@ -74,6 +74,48 @@
     
 }
 
+@media (max-width: 768px) {
+
+    .nosotros-container{
+        display: flex;
+        flex-direction: column;
+    
+    .nosotros-left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 90px 20px 0px 20px;
+
+        h1{
+            font-size: $fontSizeTitleMobile;
+            text-align: center;
+        }
+        p{
+            display: flex;
+        }
+        .p-mobile{
+            display: none;
+        }
+
+
+
+    }
+    .nosotros-right{
+        width: 100%;
+        padding-top: 40px;
+        p{
+            margin-bottom: 1vh;
+        }
+        button{
+            font-size: 15px;
+        }
+    }
+
+    }
+
+}
+
+
 @media (max-width: 576px) {
 
     .nosotros-container{
@@ -87,7 +129,7 @@
         padding: 90px 20px 0px 20px;
 
         h1{
-            font-size: $fontSize+10;
+            font-size: $fontSizeTitleMobile;
             text-align: center;
         }
         p{
@@ -95,7 +137,7 @@
         }
         .p-mobile{
             display: block;
-            font-size: $fontSize;
+            font-size: $fontSizeSubTitleMobile;
             text-align: center;
         }
 

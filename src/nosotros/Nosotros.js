@@ -5,10 +5,8 @@ import './nosotros.scss'
 export const Nosotros = ({ imgLogo }) => {
 
   
-
-  
   return (
-    <div className='nosotros-container'>
+    <div className='nosotros-container' id='nosotros'>
         <div className='nosotros-left'>
         
           <h1> ESTUDIO DE ARQUITECTURA</h1>

@@ -1,0 +1,47 @@
+@import './/../styles/fonts';
+@import './/..//styles/colors';
+
+.footer-container{
+    border-top: 2px solid $white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-info{
+
+    font-family: $font;
+    color: $white;
+    font-size: $fontSizeText
+
+}
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p{
+        font-family: $font;
+        color: $white;
+        font-size: $fontSizeText - 5px;
+        padding-right: 10px;
+    }
+
+    .icon-style{
+        color: $white;
+        height: 20px;
+        padding-right: 10px;
+    }
+
+}
+
+@media (max-width: 576px) {
+    img{
+        height: 100px;
+    }
+    .footer-info{
+
+        display: none;
+    }
+}

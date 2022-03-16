@@ -38,7 +38,7 @@ export const Navbar = () => {
           <img src={navbarLogo} alt="" />
         </Link>
         
-        <ul className={` navbar-menu ${ showMenu ? '': 'close' }`}>
+        <ul className={`animate__animated animate__fadeIn navbar-menu ${ showMenu ? '': 'close' }`}>
           <li> 
             <NavLink 
               className={currentClass}  

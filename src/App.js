@@ -13,6 +13,7 @@ import { Nosotros } from "./nosotros/Nosotros";
 import { Proyectos } from "./proyectos/Proyectos";
 import { Servicios } from "./servicios/Servicios";
 import { Contacto } from "./contacto/Contacto";
+import { Footer } from "./footer/Footer";
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
             <Route path='/proyectos' exact element={ <Proyectos/> } />
             <Route path='/contacto' exact element={ <Contacto/> } />
           </Routes>
-
+        <Footer />
       </div>
     </Router>
   
