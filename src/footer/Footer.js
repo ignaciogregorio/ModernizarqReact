@@ -1,7 +1,7 @@
 
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faBrands, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import {faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import React from 'react'
 
 import './footer.scss'
@@ -19,8 +19,12 @@ export const Footer = () => {
         <p className='footer-info'>+54 9 11 63603492 - 69631008 / info@modernizarq.com</p>
         <div className='social-media'>
             <p> Seguinos en </p>
-            <FontAwesomeIcon className='icon-style' icon={faFacebookF} />
-            <FontAwesomeIcon className='icon-style' icon={faInstagram} />
+            <a href="https://www.facebook.com/modernizarq/" target='_blank'>
+              <FontAwesomeIcon className='icon-style' icon={faFacebookF} />
+            </a>
+            <a href="https://www.instagram.com/modernizarq/" target='_blank'>
+              <FontAwesomeIcon className='icon-style' icon={faInstagram} />
+            </a>
         </div>
 
     </div>

@@ -53,12 +53,14 @@
             margin-bottom: 7vh;
             
         }
+        .link-class{
+            align-self: center;
+        }
         button{
-        
             font-family: $font;
             background-color: $golden;
             padding: 10px;
-            font-size: 20px;
+            font-size: $fontSizeText;
             border-radius: 10px;
             border: none;
             color: $darkgreen;
@@ -108,6 +110,7 @@
         }
         button{
             font-size: 15px;
+            
         }
     }
 

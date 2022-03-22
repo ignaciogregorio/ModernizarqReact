@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './nosotros.scss'
 
@@ -18,7 +19,12 @@ export const Nosotros = ({ imgLogo }) => {
         <div className='nosotros-right'>
           <img src={ imgLogo } alt="logo" />
           <p>Buscamos aprovechar al máximo tu espacio adaptándonos a tus necesidades mediante diseños personalizados.</p>
-          <button>Contactanos</button>
+          <Link
+            to='/Contacto'
+            className='link-class'
+          >
+            <button>Contactanos</button>
+          </Link>
         </div>
     </div>
   )

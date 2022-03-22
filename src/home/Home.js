@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from "react-router-dom";
 import { Nosotros } from '../nosotros/Nosotros'
 import { Carrousel } from './Carrousel'
 
@@ -19,9 +18,6 @@ export const Home = () => {
 
       <Nosotros imgLogo={ imgLogo } />
     
-      
-
-        
     
     </>
   )

@@ -1,0 +1,147 @@
+@import './/../styles/fonts';
+@import './/..//styles/colors';
+
+
+.servicios-container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .hrMobile{
+        display: none;
+    }
+    h1{
+        font-family: $font;
+        color: $white;
+        font-size: $fontSizeTitle;
+        padding-left: 150px;
+        padding-right: 150px;
+     
+    }
+    .servicios-description{
+        font-family: $font;
+        color: $white;
+        font-size: $fontSizeText;
+        padding-top: 40px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    .servicios-grilla{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      .card{
+        display: grid;
+        padding-top: 40px;
+        padding-right: 40px;
+        background-color: transparent;
+        border: none;
+        grid-template: 30px 250px 30px / 30px 250px 30px;
+        z-index: -1;
+
+        .right {
+            border-right: 1px solid white;
+          }
+          
+        .bottom {
+          border-bottom: 1px solid white;
+        }
+        
+        .left {
+          border-left: 1px solid white;
+        }
+        
+        .top {
+          border-top: 1px solid white;
+        }
+        
+        main {
+          padding-left: 20px;
+          padding-right: 20px;
+          display: flex;
+          flex-direction: column;
+
+          &:hover{
+            background-color: #6e7273;
+            hr{
+              border-top: 1px solid white;
+            }
+          }
+
+          h4{
+            padding-top: 15px;
+            margin-bottom: 0;
+            font-size: $fontSizeText;
+            color: $white;
+            text-transform: uppercase;
+          }
+          hr{
+            border-top: 1px solid grey;
+            width: 100%;
+            margin-bottom: 0;
+          }
+          .servicios-text{
+            padding-top: 5px;
+            font-family: $font;
+            font-size: $fontSizeText;
+            color: $white;
+          }
+          .servicios-button{
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-family: $font;
+            font-size: $fontSizeText;
+            color: $white;
+            position: absolute;
+            bottom: 40px;
+            &:hover{
+              color: $golden;
+            }
+
+          }
+          
+        }
+
+      }
+  }
+
+}
+@media (max-width: 768px) {
+
+
+}
+
+@media (max-width: 576px) {
+
+  .servicios-container{
+    .hrMobile{
+      display: block;
+      border: 1px solid $white;
+      background-color: $white;
+      width: 80%;
+      align-self: center;
+      
+    }
+    h1{
+      font-family: $font;
+      color: $white;
+      font-size: $fontSizeTitleMobile;
+      text-align: center;
+      padding: 0;
+  }
+  .servicios-description{
+      font-family: $font;
+      color: $white;
+      font-size: $fontSizeText;
+      padding-top: 40px;
+      padding-right: 20px;
+      padding-left: 30px;
+      text-align:left;
+  }
+  }
+
+}
