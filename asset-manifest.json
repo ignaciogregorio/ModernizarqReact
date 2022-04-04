@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ModernizarqReact/static/css/main.7e66767b.css",
-    "main.js": "/ModernizarqReact/static/js/main.cf1321fc.js",
+    "main.js": "/ModernizarqReact/static/js/main.81887ae6.js",
     "static/media/foto principal 1.png": "/ModernizarqReact/static/media/foto principal 1.5a458d3fc5e966bef0a1.png",
     "static/media/foto principal 2.png": "/ModernizarqReact/static/media/foto principal 2.02489789f7dd8d70659e.png",
     "index.html": "/ModernizarqReact/index.html",
     "main.7e66767b.css.map": "/ModernizarqReact/static/css/main.7e66767b.css.map",
-    "main.cf1321fc.js.map": "/ModernizarqReact/static/js/main.cf1321fc.js.map"
+    "main.81887ae6.js.map": "/ModernizarqReact/static/js/main.81887ae6.js.map"
   },
   "entrypoints": [
     "static/css/main.7e66767b.css",
-    "static/js/main.cf1321fc.js"
+    "static/js/main.81887ae6.js"
   ]
 }
