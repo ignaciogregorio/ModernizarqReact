@@ -11,7 +11,8 @@
     justify-content: space-around;
     color: $white;
     border-bottom: 2px solid $white;
-    
+
+
     .navbar-menu{
         display: flex;
         list-style: none;
@@ -70,7 +71,8 @@
             background-color: $blue;
             height: 100%;
             width: 100%;
-            position: absolute;
+            position: fixed;
+            
         }
         .close{
             display: none;
@@ -91,7 +93,8 @@
             position: relative;
             margin-left: 10px;
             font-size: 25px;
-            z-index: 5;
+            z-index: 15;
+
         }
         
         .logo-img{
@@ -107,11 +110,18 @@
             background-color: $blue;
             height: 100%;
             width: 100%;
-            position: absolute;
+            z-index: 14;
+        
+            
+        }
+        .navbar-links{
+            font-size: $fontSizeTitleMobile;
+            
+
         }
         .close{
             display: none;
-            font-size: 100px;
+            
         }
 
 

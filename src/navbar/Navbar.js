@@ -27,14 +27,14 @@ export const Navbar = () => {
     <nav className='navbar-container'>
 
         <FontAwesomeIcon 
-        className='burger-menu'
-        icon={ showMenu ? faX : faBars }
-        onClick = { toggleMenu }
+          className='burger-menu'
+          icon={ showMenu ? faX : faBars }
+          onClick = { toggleMenu }
         />
 
         <Link to='/' 
           className='logo-img'
-          >
+        >
           <img src={navbarLogo} alt="" />
         </Link>
         

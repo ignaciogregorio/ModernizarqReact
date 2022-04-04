@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ProyectoView } from './ProyectoView'
+import { useFetch } from '../hook/useFetch'
 
 
 
@@ -8,20 +9,24 @@ import './proyectos.scss'
 
 export const Proyectos = () => {
 
-  const [proyectos, setProyectos] = useState([])
+  // ANTERIOR FORMA DE CARGA DE PROYECTOS
+
+  // const [proyectos, setProyectos] = useState([])
   
-
-  // CARGO LOS PROYECTOS DEL JSON
-  useEffect(() => {
+  // // CARGO LOS PROYECTOS DEL JSON
+  // useEffect(() => {
     
-    fetch( './proyectos.json')
-      .then( resp => resp.json())
-      .then( datos => 
-        setProyectos(datos)
-        )
+  //   fetch( './proyectos.json')
+  //     .then( resp => resp.json())
+  //     .then( datos => 
+  //       setProyectos(datos)
+  //       )
 
-  }, [])
+  // }, [])
 
+  //CARGA DE PROYECTOS MEDIANTE USEFETCH
+
+  const proyectos = useFetch ( './proyectos.json')
 
 
   return (
