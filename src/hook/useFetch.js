@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export const useFetch = ( {url} ) => {
+export const useFetch = ( ) => {
 
 
     const [proyectos, setProyectos] = useState([])
@@ -9,7 +9,7 @@ export const useFetch = ( {url} ) => {
     // CARGO LOS PROYECTOS DEL JSON
     useEffect(() => {
       
-      fetch( url )
+      fetch( './proyectos.json' )
         .then( resp => resp.json())
         .then( datos => 
           setProyectos(datos)

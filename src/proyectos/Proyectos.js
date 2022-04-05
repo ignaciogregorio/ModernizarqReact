@@ -26,7 +26,7 @@ export const Proyectos = () => {
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ( './proyectos.json')
+  const proyectos = useFetch ()
 
   console.log(proyectos);
 
