@@ -26,7 +26,7 @@ export const Proyectos = () => {
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ( 'http://proyectos.json')
+  const proyectos = useFetch ( '/proyectos.json')
 
 
   return (
