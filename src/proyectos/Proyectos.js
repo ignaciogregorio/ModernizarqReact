@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import { ProyectoView } from './ProyectoView'
 import { useFetch } from '../hook/useFetch'
 
@@ -26,7 +26,7 @@ export const Proyectos = () => {
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ( './proyectos.json')
+  const proyectos = useFetch ( 'http://proyectos.json')
 
 
   return (

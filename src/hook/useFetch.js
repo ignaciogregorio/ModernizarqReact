@@ -15,8 +15,8 @@ export const useFetch = ( url ) => {
           setProyectos(datos)
           )
   
-    }, [])
-
+    }, [url])
+    
     return proyectos
 
 

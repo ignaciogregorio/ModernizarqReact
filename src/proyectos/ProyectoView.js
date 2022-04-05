@@ -14,9 +14,7 @@ export const ProyectoView = ({title, description, year, background}) => {
   }
 
   const mouseEnter = () =>{
-
     setShow(!show)
-
   }
   const mouseLeave = () =>{
     setShow(!show)
