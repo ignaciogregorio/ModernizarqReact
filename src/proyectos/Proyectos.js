@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { ProyectoView } from './ProyectoView'
 import { useFetch } from '../hook/useFetch'
 
@@ -11,23 +11,26 @@ export const Proyectos = () => {
 
   // ANTERIOR FORMA DE CARGA DE PROYECTOS
 
-  // const [proyectos, setProyectos] = useState([])
+   const [proyectos, setProyectos] = useState([])
   
-  // // CARGO LOS PROYECTOS DEL JSON
-  // useEffect(() => {
+   // CARGO LOS PROYECTOS DEL JSON
+   useEffect(() => {
     
-  //   fetch( './proyectos.json')
-  //     .then( resp => resp.json())
-  //     .then( datos => 
-  //       setProyectos(datos)
-  //       )
-
-  // }, [])
+     fetch( './proyectos.json')
+       .then( resp => resp.json())
+       .then( datos => 
+         setProyectos(datos)
+         )
+        }, [])
+        
+        console.log(proyectos);
+   
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ( '/proyectos.json')
+  // const proyectos = useFetch ( 'https://ignaciogregorio.github.io/proyectos.json')
 
+  // console.log(proyectos);
 
   return (
 

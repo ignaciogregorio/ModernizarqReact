@@ -9,13 +9,13 @@ export const useFetch = ( url ) => {
     // CARGO LOS PROYECTOS DEL JSON
     useEffect(() => {
       
-      fetch( url)
+      fetch( url )
         .then( resp => resp.json())
         .then( datos => 
           setProyectos(datos)
           )
 
-    }, [url])
+    }, [])
     
     return proyectos
 

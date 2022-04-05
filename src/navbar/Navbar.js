@@ -42,7 +42,7 @@ export const Navbar = () => {
           <li> 
             <NavLink 
               className={currentClass}  
-              to="/Nosotros"
+              to="/nosotros"
               onClick={ toggleMenu }
               > Nosotros </NavLink>
           </li>
