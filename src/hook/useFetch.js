@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
 
-export const useFetch = ( url ) => {
+export const useFetch = ( {url} ) => {
 
 
     const [proyectos, setProyectos] = useState([])
