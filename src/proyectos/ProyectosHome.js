@@ -1,14 +1,14 @@
 import React from 'react'
 
 import { ProyectoView } from '../proyectos/ProyectoView'
-import proyectos from '../proyectos.json'
+import {data} from '../data/data'
 
 import './proyectos.scss'
 
 export const ProyectosHome = () => {
 
 
-    const filtrados = proyectos.filter( h => h.home === true)
+    const filtrados = data.filter( h => h.home === true)
 
   return (
 
