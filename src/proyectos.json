@@ -17,7 +17,7 @@
         "ubicacion": "Villa Ballester, San Martin",
         "area": "2.35 mts * 3 mts",
         "sobre": "Ampliación – creación de quincho, piscina y parquizado. Se pensó un espacio dinámico, amplio, con visuales largas y profundas que tomen la extensión del terreno en ambos sentidos para aprovechar al máximo su uso. Se generaron limites permeables para que el dialogo de espacios interiores y exteriores sea fluido y se lean como un solo elemento. Los sectores verdes aportan vitalidad al conjunto que se inserta sobre el mismo de una manera liviana, pero sin perder su fortaleza.",
-        "background": "../assets/QUINCHO ALBERDI/background.png",
+        "background": "./assets/QUINCHO ALBERDI/background.png",
         "home": true
     },
     {
