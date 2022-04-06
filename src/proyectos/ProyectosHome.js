@@ -1,13 +1,12 @@
 import React from 'react'
 
 import { ProyectoView } from '../proyectos/ProyectoView'
-import { useFetch } from '../hook/useFetch'
+import proyectos from '../proyectos.json'
 
 import './proyectos.scss'
 
 export const ProyectosHome = () => {
 
-    const proyectos = useFetch ( './proyectos.json')
 
     const filtrados = proyectos.filter( h => h.home === true)
 
