@@ -26,7 +26,7 @@ export const Proyectos = () => {
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ('https://github.com/ignaciogregorio/ModernizarqReact/blob/master/public/proyectos.json')
+  const proyectos = useFetch ('proyectos.json')
 
   console.log(proyectos);
 
@@ -39,7 +39,7 @@ export const Proyectos = () => {
       <p className='proyectos-description'>Todos nuestros proyectos realizados</p>
     <div className='proyectos-grilla'>
     {
-      proyectos && proyectos.map( ({id, titulo, descripcion, año, background}) => (
+      proyectos && proyectos.length>0 && proyectos.map( ({id, titulo, descripcion, año, background}) => (
         <ProyectoView
           key={ id }
           title={ titulo}
