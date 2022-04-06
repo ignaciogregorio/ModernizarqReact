@@ -26,7 +26,7 @@ export const Proyectos = () => {
 
   //CARGA DE PROYECTOS MEDIANTE USEFETCH
 
-  const proyectos = useFetch ()
+  const proyectos = useFetch ('https://github.com/ignaciogregorio/ModernizarqReact/blob/master/public/proyectos.json')
 
   console.log(proyectos);
 
