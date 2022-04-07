@@ -7,7 +7,7 @@ export const ProyectoView = ({title, description, year, background}) => {
   const [show, setShow] = useState(false)
 
   const backgroundImage = { 
-    backgroundImage:`url('${background}')`,
+    backgroundImage:(`url('${background}')`),
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover'
   
