@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
+import { ProyectoScreen } from './ProyectoScreen'
 
 import './proyectos.scss'
 
-export const ProyectoView = ({title, description, year, background}) => {
+export const ProyectoContainer = ({title, description, year, background, id}) => {
 
   const [show, setShow] = useState(false)
 
@@ -20,7 +22,6 @@ export const ProyectoView = ({title, description, year, background}) => {
     setShow(!show)
   }
 
-
   return (
 
     <div className='card'>
@@ -35,12 +36,15 @@ export const ProyectoView = ({title, description, year, background}) => {
         >
           {
             show &&
-            <div className='proyecto-card'>
-              <h4> {title} </h4>
-              <p>{ description }</p>
-              <p> { year } </p>
-              <hr />
-            </div>
+              <div className='animate__animated animate__zoomIn proyecto-card'>
+                <h4> {title} </h4>
+                <p>{ description }</p>
+                <p> { year } </p>
+                <hr />
+                <Link to={`/proyectos/${title}`}>
+                  <button className='proyecto-button'>Ver mas</button>
+                </Link>
+              </div>
           }
         </main>
         <div className="left"></div>

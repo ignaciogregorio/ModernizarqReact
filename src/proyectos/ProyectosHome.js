@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ProyectoView } from '../proyectos/ProyectoView'
+import { ProyectoContainer } from './ProyectoContainer'
 import {data} from '../data/data'
 
 import './proyectos.scss'
@@ -18,7 +18,7 @@ export const ProyectosHome = () => {
         <div className='proyectos-grilla'>
           {
           filtrados && filtrados.map( ({id, titulo, descripcion, año, background}) => (
-            <ProyectoView
+            <ProyectoContainer
               key={ id }
               title={ titulo}
               description={ descripcion }

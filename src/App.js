@@ -14,6 +14,7 @@ import { Proyectos } from "./proyectos/Proyectos";
 import { Servicios } from "./servicios/Servicios";
 import { Contacto } from "./contacto/Contacto";
 import { Footer } from "./footer/Footer";
+import { ProyectoScreen } from "./proyectos/ProyectoScreen";
 
 
 function App() {
@@ -30,6 +31,8 @@ function App() {
             <Route path='/nosotros' exact element={ <Nosotros/>} />
             <Route path='/servicios' exact element={ <Servicios/> } />
             <Route path='/proyectos' exact element={ <Proyectos/> } />
+            <Route path='/proyectos/:proyecto' exact element={ <ProyectoScreen/> } />
+            
             <Route path='/contacto' exact element={ <Contacto/> } />
           </Routes>
         <Footer />

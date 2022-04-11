@@ -1,14 +1,24 @@
 export const data = [
 
     {
-        id: 1,
+        id: "1",
         titulo: "SAN LORENZO",
         descripcion: "Reforma Baño",
         año: "2021",
         ubicacion: "Villa Ballester, San Martin",
         area: "2.35 mts * 3 mts",
         sobre: "Ampliación – creación de quincho, piscina y parquizado. Se pensó un espacio dinámico, amplio, con visuales largas y profundas que tomen la extensión del terreno en ambos sentidos para aprovechar al máximo su uso. Se generaron limites permeables para que el dialogo de espacios interiores y exteriores sea fluido y se lean como un solo elemento. Los sectores verdes aportan vitalidad al conjunto que se inserta sobre el mismo de una manera liviana, pero sin perder su fortaleza.",
-        background: require("../assets/SAN LORENZO/Reforma Baño/background.png")
+        background: require("../assets/SAN LORENZO/Reforma Baño/background.png"),
+        antes: {
+            "antes1": require("../assets/SAN LORENZO/Reforma Baño/antes1.png"),
+            2: require("../assets/SAN LORENZO/Reforma Baño/antes2.png"),
+            3: require("../assets/SAN LORENZO/Reforma Baño/antes3.png")
+        },
+        despues: {
+            1: require("../assets/SAN LORENZO/Reforma Baño/despues1.png"),
+            2: require("../assets/SAN LORENZO/Reforma Baño/despues2.png"),
+            3: require("../assets/SAN LORENZO/Reforma Baño/despues3.png")
+        },
     },
     {
         id: "2",

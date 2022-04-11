@@ -1,6 +1,5 @@
 import React from 'react'
-import { ProyectoView } from './ProyectoView'
-// import { useFetch } from '../hook/useFetch'
+import { ProyectoContainer } from './ProyectoContainer'
 import {data} from '../data/data'
 
 
@@ -9,7 +8,7 @@ import './proyectos.scss'
 
 export const Proyectos = () => {
 
-  console.log(data);
+  
   return (
 
 
@@ -20,12 +19,14 @@ export const Proyectos = () => {
     <div className='proyectos-grilla'>
     {
       data && data.map( ({id, titulo, descripcion, año, background}) => (
-        <ProyectoView
+
+        <ProyectoContainer
           key={ id }
           title={ titulo}
           description={ descripcion }
           year={ año }
           background= { background }
+          id={id}
         />
       ))
     }
