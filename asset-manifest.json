@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ModernizarqReact/static/css/main.f2879090.css",
-    "main.js": "/ModernizarqReact/static/js/main.7089bf48.js",
+    "main.css": "/ModernizarqReact/static/css/main.2add4750.css",
+    "main.js": "/ModernizarqReact/static/js/main.e49b43e2.js",
     "static/media/foto principal 1.png": "/ModernizarqReact/static/media/foto principal 1.5a458d3fc5e966bef0a1.png",
     "static/media/foto principal 2.png": "/ModernizarqReact/static/media/foto principal 2.02489789f7dd8d70659e.png",
-    "static/media/background.png": "/ModernizarqReact/static/media/background.6d30149880d5a10c71c7.png",
-    "static/media/antes2.png": "/ModernizarqReact/static/media/antes2.bb7fb7400fe85d50ec7f.png",
-    "static/media/despues1.png": "/ModernizarqReact/static/media/despues1.60a24c30ecf8c727c48d.png",
-    "static/media/despues2.png": "/ModernizarqReact/static/media/despues2.aa726da77dd1ff1998f7.png",
-    "static/media/despues3.png": "/ModernizarqReact/static/media/despues3.6fb4bc2e2c81c5578ec7.png",
-    "static/media/antes3.png": "/ModernizarqReact/static/media/antes3.3fcab634e7fb31f1c37f.png",
+    "static/media/antes2.png": "/ModernizarqReact/static/media/antes2.39a133d63f028c0a45cd.png",
     "static/media/antes1.png": "/ModernizarqReact/static/media/antes1.ddce82c8fcd24533dcf7.png",
+    "static/media/background.png": "/ModernizarqReact/static/media/background.6d30149880d5a10c71c7.png",
+    "static/media/antes3.png": "/ModernizarqReact/static/media/antes3.de2455057abd7eeaf631.png",
+    "static/media/despues1.png": "/ModernizarqReact/static/media/despues1.900a7523df0b9d5f3fd6.png",
+    "static/media/despues2.png": "/ModernizarqReact/static/media/despues2.5b762d3f08d9f965211d.png",
+    "static/media/despues3.png": "/ModernizarqReact/static/media/despues3.fb46d495f2cb79a55715.png",
     "index.html": "/ModernizarqReact/index.html",
-    "main.f2879090.css.map": "/ModernizarqReact/static/css/main.f2879090.css.map",
-    "main.7089bf48.js.map": "/ModernizarqReact/static/js/main.7089bf48.js.map"
+    "main.2add4750.css.map": "/ModernizarqReact/static/css/main.2add4750.css.map",
+    "main.e49b43e2.js.map": "/ModernizarqReact/static/js/main.e49b43e2.js.map"
   },
   "entrypoints": [
-    "static/css/main.f2879090.css",
-    "static/js/main.7089bf48.js"
+    "static/css/main.2add4750.css",
+    "static/js/main.e49b43e2.js"
   ]
 }
