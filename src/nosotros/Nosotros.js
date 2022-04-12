@@ -1,4 +1,4 @@
-import  AOS  from 'aos'
+
 import React from 'react'
 import { Link } from 'react-router-dom'
 
@@ -6,8 +6,8 @@ import './nosotros.scss'
 
 export const Nosotros = ({ imgLogo }) => {
 
-  AOS.init()
-  
+
+
   return (
     <div className='nosotros-container' id='nosotros'>
         <div className='nosotros-left' data-aos="fade-right">

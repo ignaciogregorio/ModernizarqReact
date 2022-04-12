@@ -12,6 +12,10 @@ export const ProyectoScreen = ( ) => {
 
     const proyect = data.filter( p => p.titulo === proyecto )
 
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
   return (
 
     <>
@@ -19,8 +23,8 @@ export const ProyectoScreen = ( ) => {
             proyect && proyect.map(({id, titulo, descripcion, ubicacion, area, sobre,  año, background, antes, despues}) =>
             
 
-            <div className='proyectos-container'>
-                <h1 key={id}> { titulo } </h1>
+            <div  key={id} className='proyectos-container'>
+                <h1> { titulo } </h1>
                 <h3> { descripcion } </h3>
                 <div className='proyectos-description'>
                     <p>Ubicacion: { ubicacion } </p>

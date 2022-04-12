@@ -12,11 +12,11 @@ export const Proyectos = () => {
   return (
 
 
-  <div className='proyectos-container'>
+  <div className='proyectos-container'  data-aos="fade-up-right"> 
       <h1>NUESTROS PROYECTOS</h1>
       <hr className='hrMobile' />
       <p className='proyectos-description'>Todos nuestros proyectos realizados</p>
-    <div className='proyectos-grilla' data-aos="fade-up-right">
+    <div className='proyectos-grilla'>
     {
       data && data.map( ({id, titulo, descripcion, año, background}) => (
 

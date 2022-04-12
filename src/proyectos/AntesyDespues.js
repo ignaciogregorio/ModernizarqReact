@@ -6,11 +6,12 @@ import './proyectos.scss'
 export const AntesyDespues = ( {imagen} ) => {
 
 
+
   return (
 
     <div>
 
-    <Card  image= {imagen} />
+      <Card  image= {imagen} />
 
     </div>
   )
