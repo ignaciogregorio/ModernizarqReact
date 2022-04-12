@@ -5,6 +5,8 @@ import {
   Routes,
 } from "react-router-dom";
 import 'animate.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 import { Home } from "./home/Home";
@@ -19,6 +21,10 @@ import { ProyectoScreen } from "./proyectos/ProyectoScreen";
 
 function App() {
 
+  AOS.init({
+    duration: 1800,
+    once: false,
+  });
 
   return (
     

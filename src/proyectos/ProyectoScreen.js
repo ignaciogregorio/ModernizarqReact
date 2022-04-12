@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import {data} from '../data/data'
 import { AntesyDespues } from './AntesyDespues'
+import { Card } from './Card'
 
 import './proyectos.scss'
 
@@ -13,42 +14,41 @@ export const ProyectoScreen = ( ) => {
 
   return (
 
-    <div>
+    <>
         {
-            proyect && proyect.map(({id, titulo, descripcion, ubicacion, area, año, background, antes}) =>
+            proyect && proyect.map(({id, titulo, descripcion, ubicacion, area, sobre,  año, background, antes, despues}) =>
             
 
-            <>
-                <h1 key={id}> { titulo } { descripcion } </h1>
-                <div>
+            <div className='proyectos-container'>
+                <h1 key={id}> { titulo } </h1>
+                <h3> { descripcion } </h3>
+                <div className='proyectos-description'>
                     <p>Ubicacion: { ubicacion } </p>
                     <p> Area: { area } </p>
                     <p> Contruccion: { año } </p>
                 </div>
-                <div className='card'>
-                    <div className="right bottom"></div>
-                    <div className="bottom"></div>
-                    <div className="left bottom"></div>
-                    <div className="right"></div>
-                    <main>
-                        <img 
-                            src={ background } 
-                            alt="" 
-                            className='proyectoScreen-img'    
-                        />
-                    </main>
-                    <div className="left"></div>
-                    <div className="top right"></div>
-                    <div className="top"></div>
-                    <div className="left top"></div>
+                <div className='proyecto-principal'>
+                    <Card image = {background} />
+                    <p>{ sobre } </p>
                 </div>
-                <AntesyDespues  imagen = { antes.antes1  } />
-            </>
+                <h4 className='before-after'>ANTES</h4>
+                <div className='proyectos-grilla'>
+                    <AntesyDespues  imagen = { antes.antes1  } />
+                    <AntesyDespues  imagen = { antes.antes2  } />
+                    <AntesyDespues  imagen = { antes.antes3  } />
+                </div>
+                <h4 className='before-after'>DESPUES</h4>
+                <div className='proyectos-grilla'>
+                    <AntesyDespues  imagen = { despues.despues1  } />
+                    <AntesyDespues  imagen = { despues.despues2  } />
+                    <AntesyDespues  imagen = { despues.despues3  } />
+                </div>
+            </div>
             
             )
         }
 
         
-    </div>
+    </>
   )
 }

@@ -1,4 +1,7 @@
 import React from 'react'
+import { Card } from './Card'
+
+import './proyectos.scss'
 
 export const AntesyDespues = ( {imagen} ) => {
 
@@ -7,26 +10,7 @@ export const AntesyDespues = ( {imagen} ) => {
 
     <div>
 
-
-        <div className='card'>
-            <div className="right bottom"></div>
-            <div className="bottom"></div>
-            <div className="left bottom"></div>
-            <div className="right"></div>
-            <main>
-                <img 
-                    src={ imagen } 
-                    alt="" 
-                    className='proyectoScreen-img'    
-                />
-            </main>
-            <div className="left"></div>
-            <div className="top right"></div>
-            <div className="top"></div>
-            <div className="left top"></div>
-        </div>
-    
-    
+    <Card  image= {imagen} />
 
     </div>
   )

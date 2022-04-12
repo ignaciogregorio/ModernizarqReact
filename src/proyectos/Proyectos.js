@@ -8,7 +8,7 @@ import './proyectos.scss'
 
 export const Proyectos = () => {
 
-  
+
   return (
 
 
@@ -16,7 +16,7 @@ export const Proyectos = () => {
       <h1>NUESTROS PROYECTOS</h1>
       <hr className='hrMobile' />
       <p className='proyectos-description'>Todos nuestros proyectos realizados</p>
-    <div className='proyectos-grilla'>
+    <div className='proyectos-grilla' data-aos="fade-up-right">
     {
       data && data.map( ({id, titulo, descripcion, año, background}) => (
 
