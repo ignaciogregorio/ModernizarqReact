@@ -18,7 +18,7 @@ export const Nosotros = ({ imgLogo }) => {
         
         </div>
 
-        <div className='nosotros-right' data-aos="fade-left">
+        <div className='nosotros-right' data-aos="fade-right">
           <img src={ imgLogo } alt="logo" />
           <p>Buscamos aprovechar al máximo tu espacio adaptándonos a tus necesidades mediante diseños personalizados.</p>
           <Link

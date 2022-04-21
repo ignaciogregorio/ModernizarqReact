@@ -153,9 +153,19 @@
   .card{
     padding-top: 20px;
     padding-right: 0px;
+    main {
+      display: flex;
+      flex-direction: column;
+      .proyectoScreen-img{
+        height: 100%;
+        
+      }
+    }
   }
 
   .proyectos-container{
+    padding-left: 50px;
+    padding-right: 50px;
     .hrMobile{
       display: block;
       border: 1px solid $white;
@@ -168,19 +178,53 @@
       font-family: $font;
       color: $white;
       font-size: $fontSizeTitleMobile;
-      text-align: center;
+      text-align: left;
       padding: 0;
   }
+    h3{
+      font-family: $font;
+      color: $white;
+      font-size: $fontSizeTitleMobile;
+      text-align: left;
+      padding: 0;
+    }
 
     .proyectos-description{
-        font-family: $font;
-        color: $white;
-        text-align: center;
+
+        justify-content: center;
         font-size: $fontSizeSubTitleMobile;
         padding-top: 0px;
         padding-right: 0px;
         padding-left: 0px;
-      
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+    }
+    .proyecto-principal{
+      display: flex;
+      flex-direction: column;
+
+
+      p{
+        display: flex;
+        width: 100%;
+        font-family: $font;
+        color: $white;
+        font-size: $fontSizeText;
+        justify-content: center;
+        padding-top: 50px;
+        
+      }
+    }
+    .before-after{
+      font-family: $font;
+      color: $white;
+      font-size: $fontSizeSubTitle;
+      text-transform: uppercase;
+      padding-top: 50px;
+      padding-left: 0px;
+      padding-right: 0px;      
     }
   }
 
