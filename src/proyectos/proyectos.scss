@@ -26,6 +26,7 @@
       font-size: $fontSizeSubTitle;
       padding-left: 150px;
       padding-right: 150px;
+      text-transform: uppercase;
     }
 
     .proyectos-description{
@@ -37,6 +38,10 @@
         padding-right: 150px;
         display: flex;
         justify-content: space-between;
+        strong{
+          margin-right: 10px;
+          font-weight:700;
+        }
     }
     .proyecto-principal{
       display: flex;
@@ -164,8 +169,7 @@
   }
 
   .proyectos-container{
-    padding-left: 50px;
-    padding-right: 50px;
+
     .hrMobile{
       display: block;
       border: 1px solid $white;
@@ -178,14 +182,14 @@
       font-family: $font;
       color: $white;
       font-size: $fontSizeTitleMobile;
-      text-align: left;
+      text-align: center;
       padding: 0;
-  }
+    }
     h3{
       font-family: $font;
       color: $white;
       font-size: $fontSizeTitleMobile;
-      text-align: left;
+      text-align: center;
       padding: 0;
     }
 
@@ -198,7 +202,7 @@
         padding-left: 0px;
         display: flex;
         flex-direction: column;
-        text-align: left;
+        text-align: center;
 
     }
     .proyecto-principal{
@@ -207,13 +211,13 @@
 
 
       p{
-        display: flex;
+        
         width: 100%;
-        font-family: $font;
-        color: $white;
         font-size: $fontSizeText;
-        justify-content: center;
         padding-top: 50px;
+        text-align: justify;
+        padding-left: 20px; 
+        padding-right: 20px;
         
       }
     }
@@ -223,7 +227,7 @@
       font-size: $fontSizeSubTitle;
       text-transform: uppercase;
       padding-top: 50px;
-      padding-left: 0px;
+      padding-left: 20px;
       padding-right: 0px;      
     }
   }

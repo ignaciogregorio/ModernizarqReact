@@ -1,8 +1,7 @@
 import React from 'react'
-
+import { Element } from 'react-scroll/modules'
 import { Nosotros } from '../nosotros/Nosotros'
 import { ProyectosHome } from '../proyectos/ProyectosHome'
-
 import { Carrousel } from './Carrousel'
 
 import './home.scss'
@@ -20,7 +19,10 @@ export const Home = () => {
     <>
       <Carrousel img1={ carrousel1 } img2={ carrousel2 } />
 
+      {/* <Element name='nosotros'>
+      </Element> */}
       <Nosotros imgLogo={ imgLogo } />
+
 
       <ProyectosHome />
       

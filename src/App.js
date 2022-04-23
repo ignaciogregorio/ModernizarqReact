@@ -34,11 +34,10 @@ function App() {
         
           <Routes>
             <Route path='/' exact element={ <Home /> } />
-            <Route path='/nosotros' exact element={ <Nosotros/>} />
+            <Route path='/nosotros' exact element={ <Home/>} />
             <Route path='/servicios' exact element={ <Servicios/> } />
             <Route path='/proyectos' exact element={ <Proyectos/> } />
             <Route path='/proyectos/:proyecto' exact element={ <ProyectoScreen/> } />
-            
             <Route path='/contacto' exact element={ <Contacto/> } />
           </Routes>
         <Footer />

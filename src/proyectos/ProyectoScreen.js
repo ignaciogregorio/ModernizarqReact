@@ -27,9 +27,19 @@ export const ProyectoScreen = ( ) => {
                 <h1> { titulo } </h1>
                 <h3> { descripcion } </h3>
                 <div className='proyectos-description'>
-                    <p>Ubicacion: { ubicacion } </p>
-                    <p> Area: { area } </p>
-                    <p> Contruccion: { año } </p>
+                    <p> 
+                        <strong>Ubicacion:</strong>
+                        { ubicacion }
+                    </p>
+                    <p>
+                        <strong>Area:</strong>
+                        { area } 
+                    </p>
+                    <p>
+                        
+                        <strong>Contruccion:</strong> 
+                        { año }
+                    </p>
                 </div>
                 <div className='proyecto-principal'>
                     <Card image = {background} />
