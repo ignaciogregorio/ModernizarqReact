@@ -44,7 +44,6 @@ export const Navbar = () => {
             <NavLink 
               className={currentClass}  
               to="/nosotros"
-              spy={true} smooth={true} duration={500}
               onClick={ toggleMenu }
               > Nosotros </NavLink>
           </li>

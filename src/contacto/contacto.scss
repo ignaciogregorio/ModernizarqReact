@@ -1,0 +1,110 @@
+@import './/../styles/fonts';
+@import './/..//styles/colors';
+
+.contacto-container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 100%;
+
+    .contacto-info{
+
+       h1{
+            font-family: $font;
+            color: $white;
+            font-size: $fontSizeTitle;
+            text-transform: uppercase;
+            padding-left: 150px;
+            padding-right: 150px;
+            padding-bottom: 80px;
+       }
+       p{
+            font-family: $font;
+            font-size: $fontSizeText;
+            color: $white;
+            padding-left: 150px;
+            padding-right: 150px;
+       }
+
+
+    }
+    .contacto-form{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-right: 50px;
+
+        p{
+            font-family: $font;
+            font-size: $fontSizeText;
+            color: $golden;
+            text-align: center;
+            padding-bottom: 50px;
+        }
+        label{
+            font-family: $font;
+            font-size: $fontSizeText;
+            color: $white;
+        }
+        input{
+            background-color: transparent;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            padding-bottom: 10px;
+            color: $grey;
+            font-family: $font;
+            font-size: 12px;
+            margin-bottom: 10px;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid $golden;
+            }
+        }
+        textarea{
+            background-color: transparent;
+            border-bottom: 1px solid white;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            color: $grey;
+            font-family: $font;
+            font-size: 12px;
+            margin-bottom: 10px;
+            &:focus{
+                outline: none;
+                border-bottom: 1px solid $golden;
+            }
+        }
+        button{
+            font-family: $font;
+            background-color: $golden;
+            padding: 10px;
+            font-size: $fontSizeText;
+            border-radius: 10px;
+            border: none;
+            color: $darkgreen;
+            font-weight: bold;
+            width: 50%;
+            align-self: flex-start;
+            
+            &:hover{
+                background-color: $blue;
+                color: $white;
+            }
+        }
+    }
+}
+.mensaje-logo{
+    display: block;
+    margin: auto;
+}
+.mensaje-enviado{
+    font-family: $font;
+    color: $golden;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
