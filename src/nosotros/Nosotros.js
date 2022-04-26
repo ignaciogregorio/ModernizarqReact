@@ -9,7 +9,7 @@ export const Nosotros = ({ imgLogo }) => {
 
 
   return (
-    <div className='nosotros-container' id='nosotros'>
+    <section className='nosotros-container' id='nosotros'>
         <div className='nosotros-left' data-aos="fade-right">
         
           <h1> ESTUDIO DE ARQUITECTURA</h1>
@@ -28,6 +28,6 @@ export const Nosotros = ({ imgLogo }) => {
             <button>Contactanos</button>
           </Link>
         </div>
-    </div>
+    </section>
   )
 }

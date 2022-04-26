@@ -24,7 +24,7 @@ export const ProyectoScreen = ( ) => {
             
 
             <div  key={id} className='proyectos-container'>
-                <h1> { titulo } </h1>
+                <h2> { titulo } </h2>
                 <h3> { descripcion } </h3>
                 <div className='proyectos-description'>
                     <p> 

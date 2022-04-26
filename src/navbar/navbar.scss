@@ -24,23 +24,30 @@
     }
 
     .navbar-links{
-        padding-left: 20px;
+        margin-left: 20px;
         font-family: $font;
         font-size: $fontSizeText;
         text-decoration: none;
         color: $white;
+
         
         &:hover {
             color: $golden;
+            border-bottom: 2px solid $golden;
+            padding-bottom: 2px;
         }
         
     }
     .active{
         color: $golden;
+        border-bottom: 2px solid $golden;
+        padding-bottom: 2px;
     }
     .burger-menu{
         display: none;
     }
+
+
 }
 
 @media (max-width: 768px) {

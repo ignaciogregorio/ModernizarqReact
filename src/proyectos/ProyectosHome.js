@@ -13,7 +13,7 @@ export const ProyectosHome = () => {
   return (
 
     <div className='proyectos-container' data-aos="fade-right">
-        <h1>PROYECTOS</h1>
+        <h2>PROYECTOS</h2>
         <p className='proyectos-description' >Ver mas proyectos realizados</p>
         <div className='proyectos-grilla'>
           {

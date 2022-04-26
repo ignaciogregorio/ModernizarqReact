@@ -19,10 +19,7 @@ export const Home = () => {
     <>
       <Carrousel img1={ carrousel1 } img2={ carrousel2 } />
 
-      {/* <Element name='nosotros'>
-      </Element> */}
       <Nosotros imgLogo={ imgLogo } />
-
 
       <ProyectosHome />
       

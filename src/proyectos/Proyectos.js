@@ -13,7 +13,7 @@ export const Proyectos = () => {
 
 
   <div className='proyectos-container'  data-aos="fade-up-right"> 
-      <h1>NUESTROS PROYECTOS</h1>
+      <h2>NUESTROS PROYECTOS</h2>
       <hr className='hrMobile' />
       <p className='proyectos-description'>Todos nuestros proyectos realizados</p>
     <div className='proyectos-grilla'>

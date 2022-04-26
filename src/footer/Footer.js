@@ -13,7 +13,7 @@ export const Footer = () => {
 
   return (
 
-    <div className='footer-container'>
+    <footer className='footer-container'>
         
         <img src={ footerLogo } alt="" />
         <p className='footer-info'>+54 9 11 63603492 - 69631008 / info@modernizarq.com</p>
@@ -27,6 +27,6 @@ export const Footer = () => {
             </a>
         </div>
 
-    </div>
+    </footer>
   )
 }

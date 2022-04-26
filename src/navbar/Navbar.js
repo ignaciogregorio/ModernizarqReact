@@ -1,9 +1,8 @@
 
 import React, { useState } from 'react'
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars, faX } from '@fortawesome/free-solid-svg-icons'
-import { Link } from 'react-scroll/modules'
 import 'animate.css'
 
 
@@ -33,11 +32,11 @@ export const Navbar = () => {
           onClick = { toggleMenu }
         />
 
-        <NavLink to='/' 
+        <Link to='/'
           className='logo-img'
         >
           <img src={navbarLogo} alt="" />
-        </NavLink>
+        </Link>
         
         <ul className={`animate__animated animate__fadeIn navbar-menu ${ showMenu ? '': 'close' }`}>
           <li> 

@@ -22,7 +22,7 @@ export const Servicios = () => {
   return (
 
     <div className='servicios-container'>
-        <h1>NUESTROS SERVICIOS</h1>
+        <h2>NUESTROS SERVICIOS</h2>
         <hr className='hrMobile' />
         <p className='servicios-description'>Modernizarq es un estudio de Arquitectura, que se especializa en la creación y desarrollo de proyectos enfocados desde el diseño, abordando una amplia gama de actividades como construcción de obra, remodelaciones integrales, ampliaciones, dirección y control mediante diseños altamente personalizados según los objetivos y circunstancias particulares de cada proyecto.</p>
       <div className='servicios-grilla'>

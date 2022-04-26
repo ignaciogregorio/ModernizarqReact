@@ -12,7 +12,7 @@
     .hrMobile{
         display: none;
     }
-    h1{
+    h2{
         font-family: $font;
         color: $white;
         font-size: $fontSizeTitle;
@@ -64,6 +64,8 @@
           display: flex;
           flex-direction: column;
 
+
+
           &:hover{
             background-color: #6e7273;
             hr{
@@ -88,6 +90,8 @@
             font-family: $font;
             font-size: $fontSizeText;
             color: $white;
+            
+
           }
           .servicios-button{
             cursor: pointer;
@@ -132,7 +136,7 @@
       align-self: center;
       
     }
-    h1{
+    h2{
       font-family: $font;
       color: $white;
       font-size: $fontSizeTitleMobile;

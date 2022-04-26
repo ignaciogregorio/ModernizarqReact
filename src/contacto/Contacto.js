@@ -27,7 +27,8 @@ export const Contacto = () => {
     
     <div className='contacto-container'>
       <div className='contacto-info'>
-        <h1>estemos en contacto</h1>
+        <h2>estemos en contacto</h2>
+        <hr className='hrMobile' />
         <p>modernizarq@gmail.com</p>
         <p>+54 9 11 63603492 / 11 69631008</p>
         <p> Villa Ballester, Buenos Aires.</p>
