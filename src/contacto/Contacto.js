@@ -36,6 +36,7 @@ export const Contacto = () => {
       <form 
         className='contacto-form'
         onSubmit={handleSubmit}
+        autoComplete= 'off'
       >
         <p>Envianos un mensaje</p>
 

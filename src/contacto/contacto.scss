@@ -3,12 +3,14 @@
 
 .contacto-container{
     display: flex;
-    flex-direction: row;
+    justify-content: space-evenly;
     padding-top: 90px;
     padding-bottom: 90px;
-    width: 100%;
+
 
     .contacto-info{
+        display: flex;
+        flex-direction: column;
 
        h1{
             font-family: $font;
@@ -107,4 +109,45 @@
     text-align: center;
     margin-top: 80px;
     margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+
+    .contacto-container{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 90px;
+        padding-bottom: 90px;
+        .contacto-info{
+            text-align: center;
+            h1{
+                padding-left: 0px;
+                padding-right: 0px; 
+            }
+            p{
+                padding-left: 0px;
+                padding-right: 0px;
+            }
+
+        }
+        .contacto-form{
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            margin-right: 0px;
+            margin-top: 50px;
+        }
+    
+    
+    
+    
+    
+    }
+    
+
+
+
+
+
 }
