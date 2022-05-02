@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 import {data} from '../data/data'
 import { AntesyDespues } from './AntesyDespues'
 import { Card } from './Card'
+
 
 import './proyectos.scss'
 

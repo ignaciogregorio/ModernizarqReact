@@ -16,10 +16,7 @@ export const ServiciosCard = ({ titulo, texto}) => {
             <h4> {titulo} </h4>
             <hr />
             <p className='servicios-text'>{ texto }</p>
-            <button 
-            className='servicios-button'
-            >
-            VER MAS </button>
+
         </main>
         <div className="left"></div>
         <div className="top right"></div>

@@ -9,7 +9,7 @@ export const AntesyDespues = ( {imagen} ) => {
 
   return (
 
-    <div>
+    <div >
 
       <Card  image= {imagen} />
 

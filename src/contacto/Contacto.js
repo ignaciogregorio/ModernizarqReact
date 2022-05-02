@@ -1,5 +1,5 @@
 import React from 'react'
-import { useForm, ValidationError } from '@formspree/react';
+import { useForm } from '@formspree/react';
 
 import './contacto.scss'
 

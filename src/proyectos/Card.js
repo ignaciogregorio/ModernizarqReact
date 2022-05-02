@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 export const Card = ({image}) => {
 
@@ -13,7 +13,7 @@ export const Card = ({image}) => {
             <img 
                 src={ image } 
                 alt="" 
-                className='proyectoScreen-img' 
+                className='proyectoScreen-img'
             />
         </main>
         <div className="left"></div>

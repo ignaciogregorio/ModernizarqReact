@@ -1,5 +1,4 @@
 import React from 'react'
-import { Element } from 'react-scroll/modules'
 import { Nosotros } from '../nosotros/Nosotros'
 import { ProyectosHome } from '../proyectos/ProyectosHome'
 import { Carrousel } from './Carrousel'
@@ -22,7 +21,7 @@ export const Home = () => {
       <Nosotros imgLogo={ imgLogo } />
 
       <ProyectosHome />
-      
+
     </>
   )
 }

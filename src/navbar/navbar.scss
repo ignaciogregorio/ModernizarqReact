@@ -6,11 +6,14 @@
 
 .navbar-container{
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-around;
     color: $white;
     border-bottom: 2px solid $white;
+    position: sticky;
+    top: 0;
+    background-color: #303739;
+    z-index: 50;
 
 
     .navbar-menu{

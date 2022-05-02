@@ -11,7 +11,6 @@ import 'aos/dist/aos.css';
 
 import { Home } from "./home/Home";
 import { Navbar } from './navbar/Navbar';
-import { Nosotros } from "./nosotros/Nosotros";
 import { Proyectos } from "./proyectos/Proyectos";
 import { Servicios } from "./servicios/Servicios";
 import { Contacto } from "./contacto/Contacto";
