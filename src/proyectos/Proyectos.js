@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { ProyectoContainer } from './ProyectoContainer'
 import {data} from '../data/data'
 
@@ -8,7 +8,11 @@ import './proyectos.scss'
 
 export const Proyectos = () => {
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
+  
   return (
 
 

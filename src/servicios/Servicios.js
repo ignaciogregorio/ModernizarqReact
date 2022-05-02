@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { ServiciosCard } from './ServiciosCard'
 
 import './servicios.scss'
@@ -16,8 +16,9 @@ export const Servicios = () => {
   {id: 8, titulo: "AMPLIACIÓN", texto: "Es una intervención constructiva que consiste en agregar espacios a una edificación o bien dar mayor superficie a alguno de ellos."}
 ])
 
-
-
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   return (
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Nosotros } from '../nosotros/Nosotros'
 import { ProyectosHome } from '../proyectos/ProyectosHome'
 import { Carrousel } from './Carrousel'
@@ -11,6 +11,9 @@ export const Home = () => {
   const carrousel2 = require('../images/foto principal 2.png')
   const imgLogo = require('../images/Logo.png')
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
 
   return (

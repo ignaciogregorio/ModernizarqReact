@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useForm } from '@formspree/react';
 
 import './contacto.scss'
@@ -8,7 +8,10 @@ export const Contacto = () => {
   const [state, handleSubmit] = useForm("xpzboqjl");
 
   const navbarLogo = require('../images/Logo Barra Superior.png')
-
+  
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   if (state.succeeded) {
       
@@ -20,6 +23,7 @@ export const Contacto = () => {
         </>
       );
   }
+
 
 
   
