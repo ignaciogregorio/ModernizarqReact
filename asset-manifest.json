@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ModernizarqReact/static/css/main.4ed04751.css",
-    "main.js": "/ModernizarqReact/static/js/main.ec39c3c5.js",
+    "main.css": "/ModernizarqReact/static/css/main.7db5d34d.css",
+    "main.js": "/ModernizarqReact/static/js/main.f3f459c4.js",
     "static/media/foto principal 1.png": "/ModernizarqReact/static/media/foto principal 1.5a458d3fc5e966bef0a1.png",
     "static/media/foto principal 2.png": "/ModernizarqReact/static/media/foto principal 2.02489789f7dd8d70659e.png",
     "static/media/antes2.png": "/ModernizarqReact/static/media/antes2.39a133d63f028c0a45cd.png",
@@ -12,11 +12,11 @@
     "static/media/despues2.png": "/ModernizarqReact/static/media/despues2.5b762d3f08d9f965211d.png",
     "static/media/despues3.png": "/ModernizarqReact/static/media/despues3.fb46d495f2cb79a55715.png",
     "index.html": "/ModernizarqReact/index.html",
-    "main.4ed04751.css.map": "/ModernizarqReact/static/css/main.4ed04751.css.map",
-    "main.ec39c3c5.js.map": "/ModernizarqReact/static/js/main.ec39c3c5.js.map"
+    "main.7db5d34d.css.map": "/ModernizarqReact/static/css/main.7db5d34d.css.map",
+    "main.f3f459c4.js.map": "/ModernizarqReact/static/js/main.f3f459c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ed04751.css",
-    "static/js/main.ec39c3c5.js"
+    "static/css/main.7db5d34d.css",
+    "static/js/main.f3f459c4.js"
   ]
 }
