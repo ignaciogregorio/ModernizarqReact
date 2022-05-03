@@ -16,6 +16,7 @@ import { Servicios } from "./servicios/Servicios";
 import { Contacto } from "./contacto/Contacto";
 import { Footer } from "./footer/Footer";
 import { ProyectoScreen } from "./proyectos/ProyectoScreen";
+import { Whatsapp } from "./home/Whatsapp";
 
 
 function App() {
@@ -29,7 +30,8 @@ function App() {
     
     <Router basename={process.env.PUBLIC_URL}>
       <div>
-        <Navbar />  
+        <Navbar />
+        <Whatsapp />
         
           <Routes>
             <Route path='/' exact element={ <Home /> } />

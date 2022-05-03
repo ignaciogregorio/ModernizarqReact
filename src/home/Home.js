@@ -3,6 +3,7 @@ import { Nosotros } from '../nosotros/Nosotros'
 import { ProyectosHome } from '../proyectos/ProyectosHome'
 import { Carrousel } from './Carrousel'
 
+
 import './home.scss'
 
 export const Home = () => {
@@ -24,6 +25,8 @@ export const Home = () => {
       <Nosotros imgLogo={ imgLogo } />
 
       <ProyectosHome />
+
+      
 
     </>
   )
