@@ -18,7 +18,8 @@ export const Navbar = () => {
 
   const toggleMenu = () =>{
     
-    setShowMenu(!showMenu) 
+    setShowMenu(!showMenu)
+    window.scrollTo(0, 0)
   }
   
   return (
@@ -38,7 +39,7 @@ export const Navbar = () => {
           <img src={navbarLogo} alt="" />
         </Link>
         
-        <ul className={`animate__animated animate__fadeIn navbar-menu ${ showMenu ? '': 'close' }`}>
+        <ul className={`animate__animated animate__fadeInLeft navbar-menu ${ showMenu ? '': 'close' }`}>
           <li> 
             <NavLink 
               className={currentClass}  
